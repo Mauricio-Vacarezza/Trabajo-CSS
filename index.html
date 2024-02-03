@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Plantilla inicio - Bootstrap v5.1.3</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <!--Primero el móvil, no tender a hacer zoom, sino levantar a escala natural siempre y cuando haya
+       sido pensado como un sitio responsive, y anular el comportamiento de ajustar a los límites del dispositivo
+       el contenido, cuando este sobresalga-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <!--Bootstrap CSS-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <!--CSS Propio-->
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+
+    <!-- JavaScript -->
+    <!-- Popper.js + Bootstrap JS o Boostrap con Popper inc. -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <!--<script src="js/popper.min.js"></script>-->
+    <!--<script src="js/bootstrap.js"></script>-->
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row justify-content-center">
+            <figure class="col-3">
+                <img class="img-fluid" src="img/logo.png" alt="Logo PoolBall" title="PoolBall">
+            </figure>
+            <nav class="col-12 col-md-9 row align-content-center">
+                <ul class="row list-unstyled text-center">
+                    <li class="col-4"><a href="#" class="btn btn-success">¿quiénes somos?</a></li>
+                    <li class="col-4"><a href="#" class="btn btn-success">¿cómo se juega?</a></li>
+                    <li class="col-4"><a href="#" class="btn btn-success">¡quiero jugar ya!</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="row text-center align-content-center d-md-none">
+            <h1>Llegó el juego sensación!</h1>
+            <p><a href="#" class="btn btn-dark">¡quiero jugar ya!</a></p>
+        </section>
+        <section class="row d-none d-md-flex text-center align-content-center">
+            <h1>Llegó el juego sensación!</h1>
+            <p><a href="#" class="btn btn-dark">¡quiero jugar ya!</a></p>
+        </section>
+        <section class="row justify-content-center">
+            <h2 class="text-center col-12">¿Quienes somos?</h2>
+            <p class="col-12 col-md-6 col-xl-4">Somos la primer empresa uruguaya especializada en la producción y comercialización de
+                Poolball de primera calidad. Nuestras canchas son de industria nacional, diseñadas y fabricadas de
+                forma artesanal por nuestro equipo con más de 30 años de experiencia en el rubro.</p>
+            <p class="col-12 col-md-6 col-xl-4">Para su elaboración utilizamos madera Abedul, que se caracteriza por su resistencia a los
+                cambios climáticos, garantizando que el juego no sufra de deterioro al instalarse al aire libre o
+                exponerse a la lluvia. Además, el juego incluye pelotas a medida, importadas y diseñadas de forma
+                exclusiva.</p>
+            <figure class="col-12 col-md-8 col-xl-4">
+                <img class="img-fluid" src="img/nosotros.jpg" alt="Personas jugando al PoolBall" title="Sobre nosotros">
+                <figcaption>Parte de nuestro team</figcaption>
+            </figure>
+        </section>
+        <section class="row">
+            <h2 class="text-center col-12">¿Cómo se juega?</h2>
+            <article class="col-12 col-md-6 verde-oscuro">
+                <h3>Reglas básicas</h3>
+                <ul>
+                    <li>cancha de 3,40m x 5,80m</li>
+                    <li>16 balones de Poolball</li>
+                    <li>reglas están inspiradas en las del pool tradicional, pero en este caso se juega con los pies
+                    </li>
+                    <li>para todas las edades</li>
+                </ul>
+                <p><a class="btn btn-dark d-md-none" href="#">Saber más</a></p>
+            </article>
+            <article class="d-none d-md-block col-md-6 gris">
+                <h3>Elección de equipo</h3>
+                <p>Uno de los equipos comienza pateando la bola blanca, desarmando el triangulo de 15 balones.</p>
+            </article>
+            <article class="d-none d-md-block col-md-6 negro">
+                <h3>Comienzo del juego</h3>
+                <p>Uno de los equipos comienza pateando la bola blanca, desarmando el triangulo de 15 balones.</p>
+            </article>
+            <article class="d-none d-md-block col-md-6 verde-claro">
+                <h3>Goles</h3>
+                <p>Cada jugador tendrá que intentar meter en cualquiera de las 6 troneras las bolas lisas o rayadas, a
+                    excepción de la negra. El jugador siempre deberá patear la bola blanca para hacer ingresar las de su
+                    equipo.</p>
+            </article>
+            <article class="d-none d-md-block col-md-6 verde-oscuro">
+                <h3>Oooops!</h3>
+                <p>En caso de que meter la bola blanca en cualquier momento del partido, se le brindarán 2 oportunidades
+                    de tiros al oponente.</p>
+            </article>
+            <article class="d-none d-md-block col-md-6 gris">
+                <h3>Ganador</h3>
+                <p>Al finalizar, la bola negra tendrá que ser metida en la tronera donde haya entrado la última bola de
+                    su equipo. En este intento la bola blanca no puede ingresar a la tronera, de lo contrario se perderá
+                    la partida.</p>
+            </article>
+        </section>
+        <section class="row">
+            <h2 class=" text-center col-12">¡Quiero jugar ya!</h2>
+            <form class="col-12 row">
+                <div class="col-md-4">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Fabián Show">
+                </div>
+                <div class="col-md-4">
+                    <label for="celular" class="form-label">Celular</label>
+                    <input class="form-control" type="number" id="celular" name="celular" placeholder="09x 000 000">
+                </div>
+                <div class="col-md-4">
+                    <label for="edad" class="form-label">Edad</label>
+                    <select id="edad" name="edad" class="form-select">
+                        <option value="menor">menor de 18</option>
+                        <option value="18-35">18 a 35 años</option>
+                        <option value="36-60">36 a 60 años</option>
+                        <option value="eterno">etern@</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <legend>Nivel</legend>
+                    <input class="form-check-input" type="radio" id="novato" name="nivel" value="novato">
+                    <label for="novato">novat@</label>
+                    <input class="form-check-input" type="radio" id="amateur" name="nivel" value="amateur">
+                    <label class="form-check-label">amateur</label>
+                    <input class="form-check-input" type="radio" id="profesional" name="nivel" value="profesional">
+                    <label class="form-check-label">profesional</label>
+                </div>
+                <div class="text-center">
+                    <input class="btn btn-dark" type="submit" value="¡Quiero saber más!">
+                </div>
+            </form>
+        </section>
+        <footer class="row align-content-center">
+            <p class="col-12 text-center">Quiero salvar esta segunda instancia!</p>
+        </footer>
+    </div>
+</body>
+
+</html>
